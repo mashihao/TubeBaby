@@ -71,7 +71,7 @@ public class RetrofitPresenter {
                                 if (IRetrofitView != null && isProgress) {
                                     IRetrofitView.showRetrofitProgress(requestType);
                                 }
-                                mloor.d("doOnSubscribe------" + Thread.currentThread().getName());
+//                                mloor.d("doOnSubscribe------" + Thread.currentThread().getName());
                             }
                         })
                         .subscribeOn(AndroidSchedulers.mainThread())
@@ -91,13 +91,13 @@ public class RetrofitPresenter {
                             public void accept(T t) throws Exception {
                                 if (t instanceof ResponseRetrofit) {
                                     ResponseRetrofit res = (ResponseRetrofit) t;
-                                    if (res.isSuccess()) {
+                                    if (res.getCode()==0) {
                                         callListener.onSuccess(t);
                                     } else {
                                         if (isToast) {
                                             ToastUtil.makeText(res.getMessage());
                                         }
-                                        callListener.onFail(res.getErrorCode(), res);
+                                        callListener.onFail(res.getCode(), res);
                                     }
                                 } else {
                                     //新方法不走  外壳

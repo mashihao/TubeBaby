@@ -37,6 +37,6 @@ public interface ApiService {
      * 获取验证码
      * @return
      */
-    @POST("tubebaby-web/user/send-code")
+    @GET("tubebaby-web/user/send-code")
     Observable<JSONObject> sendCode(@Query("phoneNumber") String phoneNumber);
 }

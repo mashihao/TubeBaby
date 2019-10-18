@@ -8,35 +8,17 @@ import java.io.Serializable;
 
 public class ResponseRetrofit<T> implements Serializable {
 
-    private boolean isSuccess = false;
-    private int errorCode = 0;
+
+    private int code ;
     private String message = "";
-    private T result;
+    private T data;
 
-    @Override
-    public String toString() {
-        return "ResponseRetrofit{" +
-                "isSuccess=" + isSuccess +
-                ", errorCode=" + errorCode +
-                ", message='" + message + '\'' +
-                ", result=" + result +
-                '}';
+    public int getCode() {
+        return code;
     }
 
-    public boolean isSuccess() {
-        return isSuccess;
-    }
-
-    public void setSuccess(boolean success) {
-        isSuccess = success;
-    }
-
-    public int getErrorCode() {
-        return errorCode;
-    }
-
-    public void setErrorCode(int errorCode) {
-        this.errorCode = errorCode;
+    public void setCode(int code) {
+        this.code = code;
     }
 
     public String getMessage() {
@@ -47,11 +29,20 @@ public class ResponseRetrofit<T> implements Serializable {
         this.message = message;
     }
 
-    public T getResult() {
-        return result;
+    public T getData() {
+        return data;
     }
 
-    public void setResult(T result) {
-        this.result = result;
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return "ResponseRetrofit{" +
+                "code=" + code +
+                ", message='" + message + '\'' +
+                ", data=" + data +
+                '}';
     }
 }
