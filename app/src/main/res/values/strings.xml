@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TubeBaby</string>
+
+    <string name="home_title">试管帮手</string>
+    <string name="home_wiki">试管百科</string>
+    <string name="home_success">成功经验</string>
+    <string name="home_today">今日知识</string>
+    <string name="home_refresh">换一换</string>
+
+    <string name="mine_title">我的</string>
+    <string name="mine_message">消息中心</string>
+    <string name="mine_user">用户反馈</string>
+    <string name="mine_about">关于我们</string>
+    <string name="mine_version">版本检测</string>
+    <string name="mine_setting">系统设置</string>
+
+</resources>

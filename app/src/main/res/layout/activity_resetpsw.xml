@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp">
+        <TextView
+            android:text="重置登录密码"
+            android:textSize="18sp"
+            android:textColor="@color/colorLogin"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imv_reset_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/imv_back"/>
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:background="@drawable/edittext_circle_shape">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorLogin"
+                    android:text="+86"/>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#dddddd"/>
+                <EditText
+                    android:id="@+id/et_reset_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorLogin"
+                    android:inputType="phone"
+                    android:hint="请输入手机号"
+                    android:textSize="14sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:background="@drawable/edittext_circle_shape">
+
+                <TextView
+                    android:id="@+id/tv_reset_code"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorTextCreen"
+                    android:text="获取验证码"/>
+
+                <EditText
+                    android:id="@+id/et_reset_code"
+                    android:layout_toLeftOf="@+id/tv_reset_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorLogin"
+                    android:hint="请输入验证码"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="number"
+                    android:background="@null"
+                    />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:background="@drawable/edittext_circle_shape">
+                <EditText
+                    android:id="@+id/et_reset_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="设置6-8位登录密码"
+                    android:textColor="@color/colorLogin"
+                    android:inputType="textPassword"
+                    android:textSize="14sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+
+                    android:background="@null"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_centerHorizontal="true"
+                android:text="重置密码"
+                android:background="@drawable/button_circle_shape"
+                android:layout_width="300dp"
+                android:layout_height="44dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

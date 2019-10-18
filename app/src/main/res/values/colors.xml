@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#FFF</color>
+
+    <color name="colorLogin">#333333</color>
+
+    <color name="colorTextCreen">#71D5C4</color>
+    <color name="colorTextGray">#B9B9B9</color>
+    <color name="colorGray">#999999</color>
+    <color name="colorMineText">#666666</color>
+    <color name="colorLine">#EEEEEE</color>
+
+    <color name="colorHomeBg">#F8F8F8</color>
+
+    <color name="colorOrgan">#FB7F6C</color>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:text="@string/home_title"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+   <RelativeLayout
+       android:layout_marginTop="17dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <com.shsy.tubebaby.view.bannerview.BannerView
+           android:id="@+id/banner_home"
+           android:layout_centerInParent="true"
+           android:layout_width="330dp"
+           android:layout_height="153dp">
+       </com.shsy.tubebaby.view.bannerview.BannerView>
+   </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/rl_home_wiki"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/colorLogin"
+                android:drawableLeft="@mipmap/icon_foot_sel"
+                android:layout_centerInParent="true"
+                android:drawablePadding="7dp"
+                android:text="@string/home_wiki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorLine"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_home_success"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/colorLogin"
+                android:drawableLeft="@mipmap/icon_home_success"
+                android:layout_centerInParent="true"
+                android:drawablePadding="7dp"
+                android:text="@string/home_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@color/colorHomeBg">
+
+        <TextView
+            android:text="@string/home_today"
+            android:textSize="18sp"
+            android:textColor="@color/colorLogin"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_home_refresh"
+            android:text="@string/home_refresh"
+            android:textColor="@color/colorOrgan"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/icon_home_refresh"
+            android:drawablePadding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

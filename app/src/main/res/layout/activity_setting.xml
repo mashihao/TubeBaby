@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp">
+        <TextView
+            android:text="@string/mine_setting"
+            android:textSize="18sp"
+            android:textColor="@color/colorLogin"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imv_setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/imv_back"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="69dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"/>
+
+    <Button
+        android:id="@+id/btn_setting_return"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="125dp"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@drawable/button_circle_shape"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+</RelativeLayout>
